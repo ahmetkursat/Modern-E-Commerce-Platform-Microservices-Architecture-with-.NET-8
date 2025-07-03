@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ECommerce.Shared.Events\ECommerce.Shared.Events.csproj" />
-  </ItemGroup>
-
 </Project>

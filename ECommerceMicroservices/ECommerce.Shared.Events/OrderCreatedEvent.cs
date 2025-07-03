@@ -17,5 +17,7 @@ namespace ECommerce.Shared.Events
         public List<OrderItemData> Items = new();
 
         public string ShippingAddress { get; set; } = string.Empty;
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
