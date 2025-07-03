@@ -9,14 +9,10 @@ namespace ECommerce.Shared.Events
     public class OrderCreatedEvent : BaseEvent
     {
         public int OrderId { get; set; }
-
         public int UserId { get; set; }
-
-        public decimal TotalAmount { get; set; }
-
-        public List<OrderItemData> Items = new();
-
-        public string ShippingAddress { get; set; } = string.Empty;
+        public int ProductId { get; set; }  // Eksik
+        public int Quantity { get; set; }   // Eksik
+        public decimal Price { get; set; }  // Eksik
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }

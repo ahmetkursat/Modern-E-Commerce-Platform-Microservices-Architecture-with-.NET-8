@@ -10,5 +10,6 @@ namespace ECommerce.Shared.Infrastructure
     public interface IEventBus
     {
        Task PublishAsync<T>(T @event) where T : IDomainEvent;
+       Task SubscribeAsync<T>(Func<T, Task> handler) where T : IDomainEvent;
     }
 }

@@ -9,9 +9,14 @@ namespace OrderService.Application
 {
     public class OrderCreatedEventHandler : IEventHandler<OrderCreatedEvent>
     {
-        public Task Handle(OrderCreatedEvent @event)
+        public async Task Handle(OrderCreatedEvent @event)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Order Created: {@event.OrderId} for User: {@event.UserId}");
+
+            // Burada başka servislerle konuşabilirsin
+            // Örn: Stock reserve, Payment başlat vs.
+
+            await Task.CompletedTask;
         }
     }
 }

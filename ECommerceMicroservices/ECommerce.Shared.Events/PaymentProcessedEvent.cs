@@ -18,7 +18,7 @@ namespace ECommerce.Shared.Events
 
         public string PaymentMethod { get; set; } = string.Empty;
 
-        public PaymentStatus Status { get; set; };
+        public PaymentStatus Status { get; set; }
 
         public string TransactionId { get; set; } = string.Empty;
 
